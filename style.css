@@ -1,0 +1,37 @@
+@font-face {
+  font-family: font;
+  src: url(./res/fonts/font.ttf);
+}
+
+body {
+  background-color: #101214;
+}
+
+h1 {
+  font-family: font;
+  color: #ffffff;
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+}
+
+h2 {
+  font-family: font;
+  color: #f3f4f7;
+}
+
+.content {
+  margin: auto;
+  text-align: center;
+  max-width: 80%;
+}
+.pic {
+  width: 80%;
+}
