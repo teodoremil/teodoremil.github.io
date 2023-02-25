@@ -1,30 +1,91 @@
 @font-face {
-  font-family: font;
-  src: url(./res/fonts/font.ttf);
+  font-family: "title";
+  src: url(./res/fonts/title.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "body-regular";
+  src: url(./res/fonts/body-regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "body-light";
+  src: url(./res/fonts/body-light.woff2) format("woff2");
 }
 
 body {
-  background-color: #101214;
+  background-color: #ffffff;
+  transition: 0.5s ease;
+}
+
+.topnav {
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  text-align: center;
+  overflow: hidden;
+}
+
+.topnav a {
+  font-family: body-light;
+  color: #8a8a8a;
+  font-weight: normal;
+  float: center;
+  text-align: center;
+  padding: 2.5vw 2.5vw;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: #2d2d2d;
+  transition: 0.5s ease;
+}
+
+.topnav a.active {
+  color: #2d2d2d;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.top-title {
+  margin-top: 2vw;
+  margin-bottom: 6vw;
 }
 
 h1 {
-  font-family: font;
-  color: #ffffff;
-  background-image: linear-gradient(
-    to left,
-    violet,
-    indigo,
-    blue,
-    green,
-    yellow,
-    orange,
-    red
-  );
+  font-family: title;
+  color: #2d2d2d;
+  font-weight: normal;
+  font-size: 4vw;
+  margin-bottom: 0vw;
 }
 
 h2 {
-  font-family: font;
-  color: #f3f4f7;
+  font-family: body-light;
+  color: #8a8a8a;
+  font-weight: normal;
+  font-size: 2.25vw;
+  margin-top: 1vw;
+}
+
+h3 {
+  font-family: body-regular;
+  color: #8a8a8a;
+  font-weight: normal;
+  font-size: 1.65vw;
+  text-align: justify;
+  margin-top: 1vw;
+}
+
+p {
+  font-family: body-light;
+  color: #8a8a8a;
+  font-weight: normal;
+  font-size: 1.65vw;
+  text-align: justify;
+  margin-top: 1vw;
 }
 
 .content {
@@ -32,6 +93,52 @@ h2 {
   text-align: center;
   max-width: 80%;
 }
-.pic {
+
+.text-block {
+  margin-top: 5vw;
+  margin-bottom: 8vw;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+}
+
+.text-block a {
+  color: #4ec5e2;
+  text-decoration: none;
+}
+
+.text-block a:hover {
+  color: #96eaff;
+}
+
+.toastmasters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toastmasters p {
+  flex-basis: 100%;
+}
+
+.lupinus {
+  width: 20%;
+}
+
+.map {
+  margin-left: auto;
+  margin-right: auto;
   width: 80%;
+  margin-top: 3vw;
+}
+
+.map img {
+  width: 100%;
+}
+
+.map figcaption {
+  font-family: body-light;
+  color: #8a8a8a;
+  font-weight: normal;
+  font-size: 1.4vw;
+  text-align: left;
 }
