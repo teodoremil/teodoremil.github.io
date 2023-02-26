@@ -18,6 +18,13 @@ body {
   transition: 0.5s ease;
 }
 
+.anchor {
+  display: block;
+  position: relative;
+  top: -35vh;
+  visibility: hidden;
+}
+
 .navbar {
   padding-top: 1.5em;
   padding-right: 1.5em;
