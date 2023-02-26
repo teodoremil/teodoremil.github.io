@@ -57,7 +57,8 @@
         <h1>Teodor Christiansson & Emil Hartmann</h1>
         <h2>Lördag den 17e Juni 2023</h2>
       </div>
-      <div class="text-block" style="margin-bottom: 0vw" id="vigsel">
+      <a class="anchor" id="vigsel"></a>
+      <div class="text-block" style="margin-bottom: 0em">
         <h3>VIGSEL</h3>
         <p>
           Vi gifter oss den 17 juni klockan 14:00 i Sankt Petri kyrka i Malmö.
@@ -79,7 +80,8 @@
           </div>
         </div>
       </div>
-      <div class="text-block" style="margin-bottom: 0vw" id="fest">
+      <a class="anchor" id="fest"></a>
+      <div class="text-block" style="margin-bottom: 0em">
         <h3>FEST</h3>
         <p>
           Efter vigseln bjuder vi in till fest med middag och dans i Magle
@@ -109,14 +111,16 @@
           </div>
         </div>
       </div>
-      <div class="text-block" id="dresscode">
+      <a class="anchor" id="dresscode"></a>
+      <div class="text-block">
         <h3>DRESSCODE</h3>
         <p>
           Kavaj - men vi är inte strikta. Dress to impress - denim är ett stort
           No Go. Alla färger tillåtna.
         </p>
       </div>
-      <div class="text-block" id="osa">
+      <a class="anchor" id="osa"></a>
+      <div class="text-block">
         <h3>OSA</h3>
         <p>
           Meddela senast den 1/5 till
@@ -126,7 +130,8 @@
           eller till Teodor på 0706458293.
         </p>
       </div>
-      <div class="text-block" id="presenter">
+      <a class="anchor" id="presenter"></a>
+      <div class="text-block">
         <h3>PRESENTER</h3>
         <p>
           Att ni vill fira oss är de bästa gåvan av alla. Men om ni ändå vill ge
@@ -158,7 +163,8 @@
           >.
         </p>
       </div>
-      <div class="text-block" id="kontakt">
+      <a class="anchor" id="kontakt"></a>
+      <div class="text-block">
         <h3>KONTAKT</h3>
         <p>
           Vill du hålla tal? Anmäl det till våra toastmasters Axel och Ellen:
@@ -195,6 +201,17 @@
     <script>
       $(".nav-item a").on("click", function () {
         $(".navbar-toggler").click();
+      });
+    </script>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
       });
     </script>
   </body>
