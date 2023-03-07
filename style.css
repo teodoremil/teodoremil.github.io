@@ -87,7 +87,7 @@ h3 {
   color: #8a8a8a;
   font-weight: normal;
   font-size: 1rem;
-  text-align: justify;
+  text-align: left;
   margin-top: 2em;
 }
 
@@ -96,7 +96,7 @@ p {
   color: #8a8a8a;
   font-weight: normal;
   font-size: 1rem;
-  text-align: justify;
+  text-align: left;
   margin-top: 1em;
   line-height: 1.4rem;
 }
