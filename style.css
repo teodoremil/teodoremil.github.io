@@ -159,9 +159,13 @@ p {
 
 /* Media queries */
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar {
     text-align: center;
+  }
+
+  .navbar button {
+    display: block;
   }
 
   .navbar-nav {
